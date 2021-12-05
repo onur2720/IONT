@@ -121,6 +121,21 @@ function App() {
                         description="See the very heart of Copenhagen, which acts as the main gathering point and houses the municipality of Copenhagen"
                     />
                     <Marker
+                        coordinate={{ latitude: 55.684409607428776, longitude: 12.57011113366407 }}
+                        title="Torvehallerne"
+                        description="Visit the food-court of Torvehallerne, where you can experience the best grocery in Copenhagen"
+                    />
+                    <Marker
+                        coordinate={{ latitude: 55.689830522200914, longitude: 580831313363875 }}
+                        title="Statens Museum for Kunst (SMK)"
+                        description="Visit the heart of art and culture"
+                    />
+                    <Marker
+                        coordinate={{ latitude: 55.68233083906208, longitude: 12.601001523509177 }}
+                        title="Operaen"
+                        description="Visit the phenomenal building of Operaen, which is located by the harbour"
+                    />
+                    <Marker
                         coordinate={{ latitude: 55.673035, longitude: 12.568756 }}
                         title="Tivoli"
                         description="Explore the adventerous parts of yourself by visiting Tivoli, the main theme park in Copenhagen"
