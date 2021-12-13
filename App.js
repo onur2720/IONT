@@ -9,34 +9,21 @@ import MapScreen from "./components/MapScreen";
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import colors from "./assets/colors/colors";
+import DetailsScreen from "./components/DetailsScreen";
 
-/*
-function App() {
-    return (
-        <NavigationContainer>
-          <Stack.Navigator initialRouteName="ExploreScreen" screenOptions={{headerShown: false}}>
-            <Stack.Screen name="ExploreScreen" component={ExploreScreen} />
-            <Stack.Screen name="CamComp" component={ScanScreen} />
-          </Stack.Navigator>
-
-        </NavigationContainer>
-      )
-
-}
-
- */
 
 //Funksjonen som router i mellom de forskejllige screens når vi trykker på de ulike ikonene
 function App() {
     return (
         <NavigationContainer>
-            <Tab.Navigator screenOptions={({ route }) => ({
+            <Tab.Navigator screenOptions={({ route}) => ({
                 tabBarIcon: ({ color, size }) => {
                     if (route.name === 'Explore') {
 
                         return (
                             <Ionicons
-                                name='md-globe-outline'
+                                name='md-list-outline'
                                 color={color}
                                 size={size}
                             />
@@ -72,7 +59,7 @@ function App() {
                     {
                         return (
                             <Ionicons
-                                name='md-list-outline'
+                                name='md-globe-outline'
                                 size={size}
                                 color={color}
                             />
