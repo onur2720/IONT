@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Text, View, StyleSheet, Image} from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import { Header, LearnMoreLinks, Colors } from 'react-native/Libraries/NewAppScreen'
 import colors from "../assets/colors/colors";
 import Feather from 'react-native-vector-icons/Feather';

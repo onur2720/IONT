@@ -55,7 +55,6 @@ setErScanned(false);
   return (
     <View style={styles.container}>
       <Text style={styles.headline}>Scan QR Code</Text>
-      <Text style={styles.subline}>Discover the monument here</Text>
     <View style={styles.QRlayout}>
     <BarCodeScanner
         onBarCodeScanned={erScannet ? undefined : QRscan}
@@ -87,24 +86,14 @@ const styles = StyleSheet.create({
     fontWeight: 'bold'
   },
   headline: {
-    marginTop: 0,
     paddingHorizontal: 20,
     fontWeight: 'bold',
     fontSize: 30,
-    marginBottom: -150,
     fontFamily: "sans-serif",
     color: colors.textMain,
     marginLeft: -160,
   },
-  subline: {
-    marginTop: -10,
-    paddingHorizontal: 20,
-    fontSize: 16,
-    marginBottom: 5,
-    fontFamily: "sans-serif",
-    color: colors.textMain,
-    marginLeft: -175,
-  }
+ 
 });
 
 export default ScanScreen
