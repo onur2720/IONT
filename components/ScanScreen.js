@@ -84,7 +84,6 @@ const styles = StyleSheet.create({
   },
   textLayout: {
     fontSize: 16,
-    margin: 20,
     fontWeight: 'bold'
   },
   headline: {
@@ -93,7 +92,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
     marginBottom: -150,
-    fontFamily: "Futura",
+    fontFamily: "sans-serif",
     color: colors.textMain,
     marginLeft: -160,
   },
@@ -102,7 +101,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
     fontSize: 16,
     marginBottom: 5,
-    fontFamily: "Futura",
+    fontFamily: "sans-serif",
     color: colors.textMain,
     marginLeft: -175,
   }

@@ -5,11 +5,12 @@ import { Header, LearnMoreLinks, Colors } from 'react-native/Libraries/NewAppScr
 import colors from "../assets/colors/colors";
 import Feather from 'react-native-vector-icons/Feather';
 import previewData from "../assets/data/previewData";
-
+import { ScrollView } from 'react-native-gesture-handler';
 
 const ExploreScreen = () => {
   return (
       <View style={styles.container}>
+          <ScrollView>
         <Text style={styles.headline}>Discover</Text>
           <View style={styles.searchWrapper}>
               <Feather name ="search" size={16} color={colors.primary}/>
@@ -30,8 +31,11 @@ const ExploreScreen = () => {
                       </View>
                   </View>
               ))}
+              
           </View>
+          </ScrollView>
       </View>
+      
   )
 };
 
@@ -45,7 +49,8 @@ const styles = StyleSheet.create({
       justifyContent: 'space-between',
       alignItems: 'center',
       marginTop: 30,
-      paddingHorizontal: 20
+      paddingHorizontal: 20,
+      maxWidth: 50
   },
   headline: {
     marginTop: 30,
@@ -53,7 +58,7 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     fontSize: 30,
     marginBottom: 20,
-    fontFamily: "Futura",
+    fontFamily: "sans-serif",
     color: colors.textMain,
   },
     search: {
@@ -69,43 +74,47 @@ const styles = StyleSheet.create({
         paddingHorizontal: 20,
     },
     searchText: {
-        fontFamily: "Futura",
+        fontFamily: "sans-serif",
         fontSize: 14,
-        marginBottom: 5,
         color: colors.textLight,
     },
     previewWrapper: {
         marginTop: 30,
         paddingHorizontal: 20,
+        alignItems: 'center'
     },
     previewTitle: {
-        fontFamily: "Futura",
+        position: 'relative',
+        fontFamily: "sans-serif",
         fontSize: 16,
         marginBottom: 5,
         color: colors.textMain,
     },
     previewCardWrapper: {
         marginTop: 20,
-        paddingHorizontal: 20,
         backgroundColor: 'white',
         borderRadius: 25,
         paddingTop: 20,
         paddingLeft: 20,
-        flexDirection: 'row',
-        marginBottom: 0,
+        width: 280, 
+        height: 140
     },
-    previewRight: {
-        paddingLeft: 4,
-        marginRight: 0,
-    },
+      
 
     previewImage: {
-        width: 120,
-        height: 120,
-        resizeMode: "contain"
+        position: 'relative',
+        flex: 1,
+        aspectRatio: 6, 
+        resizeMode: 'contain',
+        margin: 25,
+        padding: 30,
+        bottom: 30,
+
+
     },
+    
     previewTitleWrapper: {
-        fontFamily: "Futura",
+        fontFamily: 'sans-serif',
         fontSize: 16,
         marginBottom: 5,
         color: colors.textMain,

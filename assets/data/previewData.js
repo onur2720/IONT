@@ -31,6 +31,14 @@ const previewData = [
         time: 'Open',
         description: "The Forgotten Giants are found on the east outside of main Copenhagen and is a park where you can both wander around and do activities in, perfect for all age types.",
         website: "https://thomasdambo.com/"
+    },
+    {
+        id: "4",
+        image: require('../images/amal.jpeg'),
+        title:'Amalienborg Palace',
+        pay: 'Free',
+        rating: '3.0',
+        time: 'Open until 5pm',
     }
 ];
 

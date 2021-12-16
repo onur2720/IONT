@@ -36,7 +36,7 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         fontSize: 30,
         marginBottom: 20,
-        fontFamily: "Futura",
+        fontFamily: "sans-serif",
         color: colors.textMain,
         marginLeft: 0
     },
@@ -46,14 +46,14 @@ const styles = StyleSheet.create({
         marginTop: 40,
         marginBottom: 15,
         fontSize: 18,
-        fontFamily: "Futura",
+        fontFamily: "sans-serif",
     },
     text: {
         textAlign: 'center',
         marginBottom: 20,
         marginLeft: 30,
         marginRight: 30,
-        fontFamily: "Futura",
+        fontFamily: "sans-serif",
     }
 })
 
