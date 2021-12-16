@@ -54,7 +54,7 @@ setErScanned(false);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.headline}>Scan QR Code</Text>
+      <Text style={styles.headline}>Scan QR Codes</Text>
     <View style={styles.QRlayout}>
     <BarCodeScanner
         onBarCodeScanned={erScannet ? undefined : QRscan}
