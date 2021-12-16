@@ -19,24 +19,25 @@ const ExploreScreen = () => {
               </View>
           </View>
           <View style={styles.previewWrapper}>
-              <Text style={styles.previewTitle}>Monuments</Text>
-              {previewData.map(item =>(
-                  <View style={styles.previewCardWrapper}>
-                              <View style={styles.previewTitleWrapper}>
-                                  <Text style={styles.previewTitleTitles}>{item.title}</Text>
-                                  <Text styles={styles.previewPay}>${item.pay}</Text>
-                              </View>
-                      <View styles={styles.previewRight}>
-                          <Image source={item.image} style={styles.previewImage}/>
-                      </View>
-                  </View>
-              ))}
-              
-          </View>
-          </ScrollView>
-      </View>
-      
-  )
+          <Text style={styles.previewTitle}>Monuments</Text>
+                    {previewData.map(item =>(
+                        <TouchableOpacity>
+                        <View style={styles.previewCardWrapper}>
+                            <View style={styles.previewTitleWrapper}>
+                                <Text style={styles.previewTitleTitles}>{item.title}</Text>
+                                <Text style={styles.previewPay}>${item.pay}</Text>
+                            </View>
+                            <View styles={styles.previewRight}>
+                                <Image source={item.image} style={styles.previewImage}/>
+                            </View>
+                        </View>
+                        </TouchableOpacity>
+                    ))}
+                </View>
+            </ScrollView>
+        </View>
+
+    )
 };
 
 //Her styler vi resterende av viewet
