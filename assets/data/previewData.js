@@ -35,8 +35,3 @@ const previewData = [
 ];
 
 export default previewData;
-
-/*
-<View style={[styles.previewCardWrapper, {
-    marginTop: item.id == 1 ? 15 : 10,
-}]}> */

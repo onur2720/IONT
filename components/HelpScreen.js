@@ -1,6 +1,7 @@
 //Vi importerer de nødvendige dependencies og libraries for å kunne kjøre applikasjonen
 import * as React from "react";
 import {StyleSheet, Text, View} from "react-native";
+import colors from "../assets/colors/colors";
 
 //Her har vi en funksjon som inneholder view komponenten som er den som gjør det mulig for oss å vise andre komponenter visuelt inne i applikasjonen
 const HelpScreen = () => {
@@ -19,20 +20,25 @@ const HelpScreen = () => {
 
 //Her styler vi viewet, både selvet containeren og de forskjellige tekstene
 const styles = StyleSheet.create({
-    container: {
-        borderColor: "#B5EAD7",
-        borderWidth: 5,
+    Container: {
         flex: 1,
-        justifyContent: 'flex-start',
+    },
+    wrapper: {
+        flexDirection: 'row',
+        justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: 'white',
-        borderRadius: 20,
+        marginTop: 30,
+        paddingHorizontal: 20
     },
     headline: {
-        marginTop: 20,
+        marginTop: 30,
+        paddingHorizontal: 20,
         fontWeight: 'bold',
-        fontSize: 22,
+        fontSize: 30,
         marginBottom: 20,
+        fontFamily: "Futura",
+        color: colors.textMain,
+        marginLeft: 0
     },
     question: {
         textAlign: 'center',
@@ -40,10 +46,14 @@ const styles = StyleSheet.create({
         marginTop: 40,
         marginBottom: 15,
         fontSize: 18,
+        fontFamily: "Futura",
     },
     text: {
         textAlign: 'center',
         marginBottom: 20,
+        marginLeft: 30,
+        marginRight: 30,
+        fontFamily: "Futura",
     }
 })
 

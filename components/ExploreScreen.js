@@ -110,7 +110,7 @@ const styles = StyleSheet.create({
         marginBottom: 5,
         color: colors.textMain,
         marginRight: 95,
-    },
+    }
 
 })
 //Her eksporterer vi funksjonen så vi kan bruke den andre steder i applikasjonen vår

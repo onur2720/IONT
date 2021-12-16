@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import {BarCodeScanner} from "expo-barcode-scanner";
+import colors from "../assets/colors/colors";
+
 // Her laver jeg min komponent
 function ScanScreen() {
   // jeg har 3 usestates, som skal har default values.
@@ -52,6 +54,8 @@ setErScanned(false);
 
   return (
     <View style={styles.container}>
+      <Text style={styles.headline}>Scan QR Code</Text>
+      <Text style={styles.subline}>Discover the monument here</Text>
     <View style={styles.QRlayout}>
     <BarCodeScanner
         onBarCodeScanned={erScannet ? undefined : QRscan}
@@ -66,20 +70,41 @@ setErScanned(false);
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    justifyContent: 'space-between',
     alignItems: 'center',
-    justifyContent: 'center'
+    marginTop: 30,
+    paddingHorizontal: 20
   },
   QRlayout: {
     alignItems: 'center',
     height: 350,
     width: 350,
-    borderRadius: 30
+    borderRadius: 30,
+    marginTop: -100,
   },
   textLayout: {
     fontSize: 16,
     margin: 20,
     fontWeight: 'bold'
+  },
+  headline: {
+    marginTop: 0,
+    paddingHorizontal: 20,
+    fontWeight: 'bold',
+    fontSize: 30,
+    marginBottom: -150,
+    fontFamily: "Futura",
+    color: colors.textMain,
+    marginLeft: -160,
+  },
+  subline: {
+    marginTop: -10,
+    paddingHorizontal: 20,
+    fontSize: 16,
+    marginBottom: 5,
+    fontFamily: "Futura",
+    color: colors.textMain,
+    marginLeft: -175,
   }
 });
 

@@ -6,6 +6,7 @@ import ScanScreen from "./components/ScanScreen";
 import ExploreScreen from "./components/ExploreScreen"
 import HelpScreen from "./components/HelpScreen";
 import MapScreen from "./components/MapScreen";
+import LoginScreen from "./components/LoginScreen";
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 import Ionicons from 'react-native-vector-icons/Ionicons';
@@ -75,7 +76,7 @@ function App() {
                 <Tab.Screen name="Explore" children={()=><ExploreScreen/>} />
                 <Tab.Screen name="Scan it" children={()=><ScanScreen/>} />
                 <Tab.Screen name="Help" children={()=><HelpScreen/>} />
-                <Tab.Screen name="Login" children={()=><LoginForm/>} />
+                <Tab.Screen name="Login" children={()=><LoginScreen/>} />
                 <Tab.Screen name="Map" children={()=><MapScreen/>} />
             </Tab.Navigator>
         </NavigationContainer>
