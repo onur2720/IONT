@@ -12,7 +12,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import colors from "./assets/colors/colors";
 import { TouchableOpacity } from "react-native-gesture-handler";
 
-//Funksjonen som router i mellom de forskejllige screens når vi trykker på de ulike ikonene
+//Funktion som router mellem de forskellige screen når vi trykke på de forskellige ikoner//
 function App() {
     return (
         <NavigationContainer>
