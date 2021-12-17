@@ -1,6 +1,7 @@
-import {View} from "react-native";
+
 import React from "react";
 
+//dette er data om monumentene som vi looper igjennom viser i views inne på Explorescreen, ikke alle properties er implementert i den endelige MVP
 const previewData = [
     {
         id: "1",

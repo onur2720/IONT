@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Text, View, StyleSheet, Image, TouchableOpacity} from 'react-native';
 import { Header, LearnMoreLinks, Colors } from 'react-native/Libraries/NewAppScreen'
@@ -7,6 +6,7 @@ import Feather from 'react-native-vector-icons/Feather';
 import previewData from "../assets/data/previewData";
 import { ScrollView } from 'react-native-gesture-handler';
 
+//Vi henter data fra previewdata.js om de ulike monumenter som vi looper igjennom her, og viser på skjermen i hver sin container
 const ExploreScreen = () => {
   return (
       <View style={styles.container}>

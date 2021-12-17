@@ -126,6 +126,11 @@ function App() {
                         description="Visit the food-court of Torvehallerne, where you can experience the best grocery in Copenhagen"
                     />
                     <Marker
+                        coordinate={{ latitude: 55.69288, longitude: 12.59928 }}
+                        title="The Little Mermaid"
+                        description="The little Mermaid is a monument on the west-coast of Copenhagen, a monument trully to be seen."
+                    />
+                    <Marker
                         coordinate={{ latitude: 55.689830522200914, longitude: 580831313363875 }}
                         title="Statens Museum for Kunst (SMK)"
                         description="Visit the heart of art and culture"
